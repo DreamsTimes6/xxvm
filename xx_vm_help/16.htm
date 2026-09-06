@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<Title>and ~d[sp+4],~d[sp]</Title>
+<style type="text/css">
+body
+{
+	background-color:RGB(192,151,73) ;
+}
+</style>
+</HEAD>
+
+<BODY>
+	<h1>and ~d[sp+4],~d[sp]</h1>
+	<p>It's assembly Pseudo-code .</p>
+	<p>It's means as the same of assemmbly instruction "and ?,?"</p>
+	<h2>Operation</h2>
+	<p>mov t0,d[sp+4];mov t1,d[sp];not t0;not t1;and t0,t1;mov [sp+4],t0;mov [sp],eflag</p>
+	<h2>Example</h2>
+	<h3>00818241  and ~d[sp+4],~d[sp]   00400000  00400000  ffbfffff & ffbfffff=ffbfffff </h3>
+	<p>"00818241":It is a address of Pseudo-code</p>
+	<p>"and ~d[sp+4],~d[sp]"":is Pesudo-code</p>
+	<p>"00400000":it's a value of "[sp+4]",the size of "[sp+4]" is dword,so the value is "00400000"</p>
+	<p>"00400000":it's a value of "[sp]",,the size of "[sp]" is dword,so the value is "00400000"</p>
+	<p>"ffbfffff & ffbfffff=ffbfffff ":it's the value of result,~00400000 & ~00400000=ffbfffff & ffbfffff=ffbfffff .Final,[sp+4]=ffbfffff,[sp]=eflag</p>
+
+</BODY>
+</HTML>

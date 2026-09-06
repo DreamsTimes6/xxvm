@@ -1,0 +1,182 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+
+
+IDD_DIALOG3 DIALOG 0, 0, 407, 193
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Configuration"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "Condition",IDC_STATIC,3,7,211,56
+    GROUPBOX        "Action",IDC_STATIC,4,122,211,34
+    CONTROL         "Continue",IDC_RADIOCONTINUE,"Button",BS_AUTORADIOBUTTON,61,132,52,15
+    CONTROL         "Stop",IDC_RADIOSTOP,"Button",BS_AUTORADIOBUTTON,11,135,38,13
+    PUSHBUTTON      "OK",IDC_CNDOK,235,163,66,14
+    PUSHBUTTON      "CANCLE",IDC_CNDCANCLE,321,164,66,14
+    LTEXT           "vm-code",IDC_STATIC,13,20,47,14
+    COMBOBOX        IDC_COMBOXCODE,80,19,118,13,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "ADD",IDC_CNDADD,30,168,57,14
+    PUSHBUTTON      "DELETE",IDC_CNDDEL,119,166,64,18
+    CONTROL         "List3",IDC_LISTCND,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,226,13,162,142
+    EDITTEXT        IDC_EDITCODE,82,42,120,12,ES_AUTOHSCROLL
+    LTEXT           "Expression",IDC_STATIC,12,41,53,13
+    GROUPBOX        "Change",IDC_STATIC,6,68,209,52
+    EDITTEXT        IDC_EDIT2,68,88,136,16,ES_AUTOHSCROLL
+    LTEXT           "Expression",IDC_STATIC,14,88,45,17
+    CONTROL         "Change and Continue",IDC_RADIOCHGCTNU,"Button",BS_AUTORADIOBUTTON,126,134,81,15
+END
+
+IDD_DIALOG4 DIALOGEX 0, 0, 240, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "analyze cfg"
+FONT 10, "System", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "save",IDC_BUTTON1,38,156,50,14
+    PUSHBUTTON      "cancle",IDC_BUTTON2,152,156,50,14
+    LTEXT           "analyze rule:",IDC_STATIC,31,23,47,12
+    EDITTEXT        IDC_EDIT1,85,40,117,14,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,7,7,226,56
+    LTEXT           "count:",IDC_STATIC,31,43,38,12
+    COMBOBOX        IDC_COMBO1,85,21,117,50,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,7,68,226,37
+    COMBOBOX        IDC_COMBO2,85,83,117,50,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "opmz_data:",IDC_STATIC,30,83,44,14
+    GROUPBOX        "",IDC_STATIC,7,112,226,37
+    CONTROL         "Associated Application Open Log",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,127,173,12
+END
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 190
+    END
+
+    IDD_DIALOG5, DIALOG
+    BEGIN
+        RIGHTMARGIN, 308
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "damotouicon (2).ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG5 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_STRING2             "|0Init Log|,|1Analyze-Dynamic|,|2Analyze-Static|,|3Analyze-Stop|,|4Log-Open|,|12Analyze-cfg|,|8OPMZ(beta)|,|9OPMZ-Stop|,|10OPMZ-Log|,|11OPMZ-Version-update|,|6help|"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

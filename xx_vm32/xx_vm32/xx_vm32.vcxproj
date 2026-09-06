@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{5FE3CCBB-06CD-40EB-9B5E-8A98E17128EC}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.35506.110</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/J %(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+    </ClCompile>
+    <Link>
+      <GenerateMapFile>true</GenerateMapFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/J %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/SAFESEH:NO %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="analyze_cfg.c" />
+    <ClCompile Include="crc32.c" />
+    <ClCompile Include="dbg_command.c" />
+    <ClCompile Include="func_op1.c" />
+    <ClCompile Include="func_op10.c" />
+    <ClCompile Include="func_op2.c" />
+    <ClCompile Include="func_op3.c" />
+    <ClCompile Include="func_op4.c" />
+    <ClCompile Include="func_op5.c" />
+    <ClCompile Include="func_op6.c" />
+    <ClCompile Include="func_op7.c" />
+    <ClCompile Include="func_op8.c" />
+    <ClCompile Include="func_op9.c" />
+    <ClCompile Include="func_op_ext.c" />
+    <ClCompile Include="func_op_v.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="vm_file.c" />
+    <ClCompile Include="vm_handle.c" />
+    <ClCompile Include="vm_handle_0000.c" />
+    <ClCompile Include="vm_handle_0100.c" />
+    <ClCompile Include="vm_handle_0101.c" />
+    <ClCompile Include="vm_handle_0102.c" />
+    <ClCompile Include="vm_handle_0200.c" />
+    <ClCompile Include="vm_handle_0201.c" />
+    <ClCompile Include="vm_handle_0202.c" />
+    <ClCompile Include="vm_handle_0300.c" />
+    <ClCompile Include="vm_handle_0301.c" />
+    <ClCompile Include="vm_handle_0302.c" />
+    <ClCompile Include="vm_handle_0400.c" />
+    <ClCompile Include="vm_handle_0401.c" />
+    <ClCompile Include="vm_handle_0402.c" />
+    <ClCompile Include="vm_handle_0500.c" />
+    <ClCompile Include="vm_handle_0501.c" />
+    <ClCompile Include="vm_handle_0502.c" />
+    <ClCompile Include="vm_handle_0600.c" />
+    <ClCompile Include="vm_handle_0601.c" />
+    <ClCompile Include="vm_handle_0602.c" />
+    <ClCompile Include="vm_handle_0700.c" />
+    <ClCompile Include="vm_handle_0701.c" />
+    <ClCompile Include="vm_handle_0800.c" />
+    <ClCompile Include="vm_handle_0801.c" />
+    <ClCompile Include="vm_handle_0900.c" />
+    <ClCompile Include="vm_handle_0901.c" />
+    <ClCompile Include="vm_handle_0902.c" />
+    <ClCompile Include="vm_handle_0a00.c" />
+    <ClCompile Include="vm_handle_0a10.c" />
+    <ClCompile Include="vm_handle_0b00.c" />
+    <ClCompile Include="vm_handle_0b01.c" />
+    <ClCompile Include="vm_handle_0b02.c" />
+    <ClCompile Include="vm_handle_0b10.c" />
+    <ClCompile Include="vm_handle_0c00.c" />
+    <ClCompile Include="vm_handle_0c10.c" />
+    <ClCompile Include="vm_handle_0d00.c" />
+    <ClCompile Include="vm_handle_0d01.c" />
+    <ClCompile Include="vm_handle_0d02.c" />
+    <ClCompile Include="vm_handle_0e00.c" />
+    <ClCompile Include="vm_handle_0e01.c" />
+    <ClCompile Include="vm_handle_0e02.c" />
+    <ClCompile Include="vm_handle_0e10.c" />
+    <ClCompile Include="vm_handle_0f00.c" />
+    <ClCompile Include="vm_handle_0f01.c" />
+    <ClCompile Include="vm_handle_1000.c" />
+    <ClCompile Include="vm_handle_1001.c" />
+    <ClCompile Include="vm_handle_1100.c" />
+    <ClCompile Include="vm_handle_1200.c" />
+    <ClCompile Include="vm_handle_1300.c" />
+    <ClCompile Include="vm_handle_1400.c" />
+    <ClCompile Include="vm_regindex.c" />
+    <ClCompile Include="vm_shandle.c" />
+    <ClCompile Include="vm_shandle_0000.c" />
+    <ClCompile Include="vm_shandle_0f00.c" />
+    <ClCompile Include="vm_shandle_0f01.c" />
+    <ClCompile Include="vm_shandle_1200.c" />
+    <ClCompile Include="vm_shandle_1401.c" />
+    <ClCompile Include="vm_sreg.c" />
+    <ClCompile Include="xx_execute.c" />
+    <ClCompile Include="xx_link_list.c" />
+    <ClCompile Include="xx_opmz.c" />
+    <ClCompile Include="xx_vm.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="analyze_cfg.h" />
+    <ClInclude Include="crc32.h" />
+    <ClInclude Include="func_op.h" />
+    <ClInclude Include="Plugin.h" />
+    <ClInclude Include="readme.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="xxdisasm32.h" />
+    <ClInclude Include="xx_comm32.h" />
+    <ClInclude Include="xx_def.h" />
+    <ClInclude Include="xx_link_list.h" />
+    <ClInclude Include="xx_opdef2.h" />
+    <ClInclude Include="xx_opdef3.h" />
+    <ClInclude Include="xx_opmz.h" />
+    <ClInclude Include="xx_vm.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="damotouicon (2).ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="xx_res.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

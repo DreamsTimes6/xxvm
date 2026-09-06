@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="analyze_cfg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="crc32.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="func_op.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>    <ClInclude Include="xx_comm32.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xx_def.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xx_iat.h">
+      <Filter>头文件</Filter>
+    </ClInclude>    <ClInclude Include="xx_link_list.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xx_opdef2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xx_opdef3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xxdisasm32.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xx_plugin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="limits.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="st_slist.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="analyze_cfg.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cfg.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="crc32.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="func_op_ext.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="func_op1.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="func_op2.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="func_op3.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="func_op4.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="func_op5.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="func_op6.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="func_op7.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="func_op8.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="xx_execute.c">
+      <Filter>源文件</Filter>
+    </ClCompile>    <ClCompile Include="xx_link_list.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="xx_sreg.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="xx_vm_iat_x32.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="st_slist.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="func_op_v.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="func_op9.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="func_op10.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="xx_res.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="damotouicon (2).ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

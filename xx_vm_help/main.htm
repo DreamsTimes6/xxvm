@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<Title>xx_vm_release</Title>
+<style type="text/css">
+body
+{
+	background-color:RGB(192,151,73) ;
+}
+</style>
+</HEAD>
+
+<BODY>
+
+<h1>xx_vm_release</h1>
+<p>VMP Virtual Code Analysis restore plug-in, you can automate the analysis of virtual code protected by VMP, provides a rich information of the log files, through the analysis of the log pseudocode, we can almost restore the original instructions. So as to achieve the purpose of analysis. At present we have developed ollydbg applicable plug-ins, we will also docking other mainstream debugger</p>
+<p><a href="http://xxdisasm.com">websit: xxdisasm.com</a></p>
+<h3>NOTES 1</h3>
+<p>"index";It is a index of virtual-register,also it's a identification</p>
+<p>"d";dword</p>
+<p>"w";word</p>
+<p>"b";byte</p>
+<p>"~";not</p>
+<p>"|";or</p>
+<p>"&";and</p>
+<p>"[]";value of pointer</p>
+<p>"sp";virtual stack</p>
+<p>"dreg";dword register,example "eax"</p>
+<p>"wreg";word register,example "ax"</p>
+<p>"breg";byte register,example "al"</p>
+<p>"dconst";dword const,example "0x11223344"</p>
+<p>"wconst";word const,example "0x1122"</p>
+<p>"bconst";byte const,example "0x11"</p>
+<p>"d[]";dword value of pointer</p>
+<p>"w[]";word value of pointer</p>
+<p>"b[]";byte value of pointer</p>
+<p>"t0":Temporary register</p>
+<p>"t1":Temporary register</p>
+<h3>NOTES 2</h3>
+<p>The smallest virtual-stack operation is word.Example "push breg",the size of reg is byte,but the sp will subtract 2.</p>
+<p>Examples are extracted from log information</p>
+</BODY>
+</HTML>
+
+

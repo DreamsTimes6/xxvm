@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{CF789185-F290-4CC3-8068-EC8A5CA88476}</ProjectGuid>
+    <RootNamespace>xxvmiatx64</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetExt>.dp64</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>F:\xxvm\pluginsdk\yara\yara;F:\xxvm\pluginsdk\yara;F:\xxvm\pluginsdk\XEDParse;F:\xxvm\pluginsdk\TitanEngine;F:\xxvm\pluginsdk\lz4;F:\xxvm\pluginsdk\jansson;F:\xxvm\pluginsdk\DeviceNameResolver;F:\xxvm\pluginsdk\dbghelp;F:\xxvm\pluginsdk;$(IncludePath)</IncludePath>
+    <LibraryPath>F:\xxvm\pluginsdk\yara\yara;F:\xxvm\pluginsdk\yara;F:\xxvm\pluginsdk\XEDParse;F:\xxvm\pluginsdk\TitanEngine;F:\xxvm\pluginsdk\lz4;F:\xxvm\pluginsdk\jansson;F:\xxvm\pluginsdk\DeviceNameResolver;F:\xxvm\pluginsdk\dbghelp;F:\xxvm\pluginsdk;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>F:\xxvm\pluginsdk\yara\yara;F:\xxvm\pluginsdk\yara;F:\xxvm\pluginsdk\XEDParse;F:\xxvm\pluginsdk\TitanEngine;F:\xxvm\pluginsdk\lz4;F:\xxvm\pluginsdk\jansson;F:\xxvm\pluginsdk\DeviceNameResolver;F:\xxvm\pluginsdk\dbghelp;F:\xxvm\pluginsdk;$(IncludePath)</IncludePath>
+    <LibraryPath>F:\xxvm\pluginsdk\yara\yara;F:\xxvm\pluginsdk\yara;F:\xxvm\pluginsdk\XEDParse;F:\xxvm\pluginsdk\TitanEngine;F:\xxvm\pluginsdk\lz4;F:\xxvm\pluginsdk\jansson;F:\xxvm\pluginsdk\DeviceNameResolver;F:\xxvm\pluginsdk\dbghelp;F:\xxvm\pluginsdk;$(LibraryPath)</LibraryPath>
+    <TargetExt>.dp64</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateMapFile>true</GenerateMapFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="analyze_cfg.h" />
+    <ClInclude Include="func_op.h" />
+    <ClInclude Include="limits.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="st_slist.h" />
+    <ClInclude Include="xxdisasm64.h" />
+    <ClInclude Include="xx_comm64.h" />
+    <ClInclude Include="xx_def.h" />
+    <ClInclude Include="xx_link_list.h" />
+    <ClInclude Include="xx_opdef2.h" />
+    <ClInclude Include="xx_opdef3.h" />
+    <ClInclude Include="xx_plugin.h" />
+    <ClInclude Include="xx_iat64.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="subfunc_op1.asm">
+      <FileType>Document</FileType>
+      <Command>ml64 /c %(filename).asm</Command>
+      <Outputs>%(filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="subfunc_op2.asm">
+      <FileType>Document</FileType>
+      <Command>ml64 /c %(filename).asm</Command>
+      <Outputs>%(filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="subfunc_op3.asm">
+      <FileType>Document</FileType>
+      <Command>ml64 /c %(filename).asm</Command>
+      <Outputs>%(filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="subfunc_op4.asm">
+      <FileType>Document</FileType>
+      <Command>ml64 /c %(filename).asm</Command>
+      <Outputs>%(filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="subfunc_op5.asm">
+      <FileType>Document</FileType>
+      <Command>ml64 /c %(filename).asm</Command>
+      <Outputs>%(filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="subfunc_op6.asm">
+      <FileType>Document</FileType>
+      <Command>ml64 /c %(filename).asm</Command>
+      <Outputs>%(filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="analyze_cfg.c" />
+    <ClCompile Include="cfg.c" />
+    <ClCompile Include="func_op1.c" />
+    <ClCompile Include="func_op2.c" />
+    <ClCompile Include="func_op3.c" />
+    <ClCompile Include="func_op4.c" />
+    <ClCompile Include="func_op5.c" />
+    <ClCompile Include="func_op6.c" />
+    <ClCompile Include="func_op7.c" />
+    <ClCompile Include="func_op8.c" />
+    <ClCompile Include="func_op_ext.c" />
+    <ClCompile Include="st_slist.c" />
+    <ClCompile Include="vm_sreg.c" />
+    <ClCompile Include="xx_execute64.c" />
+    <ClCompile Include="xx_vm_iat_x64.cpp" />
+    <ClCompile Include="xx_link_list.c" />
+    <ClCompile Include="xx_reg_index.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="xx_res.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="xx_vm.inc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="damotouicon (2).ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,88 @@
+
+opmz多条件jcc
+
+
+pushad popad ，参考wm_engine（完成x32dbg,od）
+
+
+pop指令执行
+004A00BC                        | 8F0424                  | pop dword ptr ss:[esp]                               |
+参考wm_engine  conv_item（完成x32dbg）
+
+
+符合扩展
+item_sign_ext 
+参考wm_engine func_op_ext.c （完成x32dbg,od）
+
+
+std fd 数据库（已更新xxdisasm）
+
+
+push pop 参考wm_engine （完成x32dbg,od）
+
+xx_opdef 参考wm_engine （完成x32dbg,od）
+
+func_op 添加noinline （完成x32dbg,od）
+
+
+xx_execute.c 
+	get_inst_context  DbgMemRead 参考wm_engine （完成x32dbg,od）
+	操作码定义，分支  （完成x32dbg,od）
+
+
+xx_execute,c
+	结束条件代码修改 （完成x32dbg,od）
+
+op_len 改为sop_len  （完成x32dbg）
+
+
+
+
+xdbg标签，如果有标签，则再次获取该标签的函数地址，比较地址是否一致（暂时不改）
+
+	xx_vm_x32,xx_vm32,xx_vm_iat32,xx_vm_iat_x32
+	64位暂不添加新指令，待wm_engine64开发后添加
+
+
+多开（优先）（完成）
+
+
+od,opmz格式（完成）
+
+x64 opmz（完成）
+
+重新编译测试
+
+=================================================================
+
+opmz，
+1.多条件，也就是多个2级指令
+2.逻辑运算的优化，涉及树结构的改变，
+3.立即数的变换，可能存在立即数A和~A，需要确定是同一个立即数
+4.部分指令在32位，64位，存在操作一样，SP不同的情况，32位和64位需要分开定义,add d[sp+4],d[sp] (优先)
+	修复xx_opmz的指令定义
+	32位mul,div  64位mul32,div32,mul64,div64 lv2更新完成，
+	更新xx_vm32,64 （完成）
+	lv3 lv4 定义及指令修复（完成）
+
+=================================================================
+测试
+版本号
+基本功能是否正常
+使用功能时先登录
+附加测试
+无模块，xdbg
+优化还原是否正常
+
+
+
+
+
+
+
+
+
+
+
+
+

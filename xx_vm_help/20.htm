@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<Title>shr d[sp],b[sp+4]</Title>
+<style type="text/css">
+body
+{
+	background-color:RGB(192,151,73) ;
+}
+</style>
+</HEAD>
+
+<BODY>
+	<h1>shr d[sp],b[sp+4]</h1>
+	<p>It's assembly Pseudo-code .</p>
+	<p>It's means as the same of assemmbly instruction "shr ?,?"</p>
+	<p>The Pseudo-code has two step;</p>
+	<h2>Operation</h2>
+	<p>mov t0,d[sp];mov t1,b[sp+4];shr t0,t1;sub sp,2;mov [sp+4],t0;mov [sp],eflag</p>
+	<h2>Example</h2>
+	<h3>006b22be  shr d[sp],b[sp+4]  (sub sp,2)  d[sp]=00000000  b[sp+4]=00000006  d[sp]=eflag,d[sp+4]=00000000   </h3>
+	<p>"00677f53":It is a address of Pseudo-code</p>
+	<p>"shr d[sp],b[sp+4]":It is Pesudo-code</p>
+	<p>"(sub sp,2)":This is secong step,operate the "sp",for keep stack balance</p>
+	<p>"d[sp]=00000000":it's a value ,the size of "[sp]" is dword,so the value is "00000000"</p>
+	<p>"b[sp+4]=00000006":it's a value ,the size of "[sp+4]" is dword,so the value is "00000006"</p>
+	<p>"d[sp]=eflag,d[sp+4]=00000000":it's a value of result,the size of "[sp+4]" is dword,so the value is "00217700"</p>
+
+</BODY>
+</HTML>
+
+
+
+

@@ -1,0 +1,51 @@
+# Build outputs
+Debug/
+Release/
+x64/
+*.obj
+*.pdb
+*.dll
+*.exe
+*.lib
+*.dp32
+*.dp64
+*.ipch
+*.idb
+*.iobj
+*.ipdb
+*.exp
+*.ilk
+*.aps
+*.ncb
+*.sdf
+*.opensdf
+*.suo
+*.user
+*.filters.bak
+Browse.VC.db
+*.VC.db
+*.tlog
+*.lastbuildstate
+
+# Visual Studio
+.vs/
+ipch/
+*.user
+
+# Local unused unicorn copy (build uses F:\xxvm\unicorn_src)
+xx_vm_x32/xx_vm_x32/unicorn/
+xx_vm_x64/xx_vm_x64/unicorn/
+
+# Misc
+*.log
+*.tmp
+
+# 备份/中间态文件（非源码）
+*.bak_*
+*.fold
+*.prefold
+*.asmval
+*.asmfilter
+*.rebuild_*
+*_FINAL_ASMVAL.cpp
+*_REBUILT_FINAL.cpp

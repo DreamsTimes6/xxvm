@@ -1,0 +1,173 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+
+
+IDD_DIALOG3 DIALOG  0, 0, 407, 193
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Configuration"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "Condition",IDC_STATIC,3,7,211,56
+    GROUPBOX        "Action",IDC_STATIC,4,122,211,34
+    CONTROL         "Continue",IDC_RADIOCONTINUE,"Button",BS_AUTORADIOBUTTON,61,132,52,15
+    CONTROL         "Stop",IDC_RADIOSTOP,"Button",BS_AUTORADIOBUTTON,11,135,38,13
+    PUSHBUTTON      "OK",IDC_CNDOK,235,163,66,14
+    PUSHBUTTON      "CANCLE",IDC_CNDCANCLE,321,164,66,14
+    LTEXT           "vm-code",IDC_STATIC,13,20,47,14
+    COMBOBOX        IDC_COMBOXCODE,80,19,118,13,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "ADD",IDC_CNDADD,30,168,57,14
+    PUSHBUTTON      "DELETE",IDC_CNDDEL,119,166,64,18
+    CONTROL         "List3",IDC_LISTCND,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,226,13,162,142
+    EDITTEXT        IDC_EDITCODE,82,42,120,12,ES_AUTOHSCROLL
+    LTEXT           "Expression",IDC_STATIC,12,41,53,13
+    GROUPBOX        "Change",IDC_STATIC,6,68,209,52
+    EDITTEXT        IDC_EDIT2,68,88,136,16,ES_AUTOHSCROLL
+    LTEXT           "Expression",IDC_STATIC,14,88,45,17
+    CONTROL         "Change and Continue",IDC_RADIOCHGCTNU,"Button",BS_AUTORADIOBUTTON,126,134,81,15
+END
+
+IDD_DIALOG4 DIALOG  180, 100, 179, 142
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "cfg"
+FONT 10, "System"
+BEGIN
+    LTEXT           "code start",IDC_STATIC,14,21,42,13
+    LTEXT           "code end",IDC_STATIC,14,43,42,13
+    LTEXT           "vmp0 start",IDC_STATIC,14,65,42,13
+    LTEXT           "vmp0 end",IDC_STATIC,14,87,42,13
+    PUSHBUTTON      "OK",IDC_BUTTON1,26,112,40,15
+    PUSHBUTTON      "CANCLE",IDC_BUTTON2,112,111,40,15
+    EDITTEXT        IDC_EDITCS,63,21,97,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITCE,63,41,97,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITVS,63,61,97,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITVE,63,81,97,13,ES_AUTOHSCROLL
+END
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 190
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 172
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "damotouicon (2).ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING2             "|0search vmiat|,|1print|,|2print invalid iat|,|3replace invalid iat|,|4replace all invalid iat|,|5fix vmiat|,|6log vmiat|,|7notes vmiat|,|8free|,|9cfg|"
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

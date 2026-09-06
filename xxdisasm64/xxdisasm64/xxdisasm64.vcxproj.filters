@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="xxdisasm64.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="item_reg_def.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="item_type_a.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="item_type_reg.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mod_begin_check.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mod_finish.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mod_fpu_opcode.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mod_items.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mod_modrm.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mod_opcode.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mod_prefix.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mod_rex.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mod_sib.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="xxdisasm.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="xxdisasm_api0.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="xxdisasm_api1.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="xxdisasm_api2.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="xxdisasm_api3.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="inst_print.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="seek_table.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sql_rdata.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="xx_sql.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="xx_inst.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xx_reg2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xx_err.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="g_sql.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xx_def.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xx_comm64.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xx_mysql.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="xxdisasm.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

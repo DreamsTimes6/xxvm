@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="Background" value="0x445fad">
+	<param name="ExWindow Styles" value="0x100">
+	<param name="Window Styles" value="0x800025">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="xx_vm">
+		<param name="Local" value="main.htm">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="vm-entry">
+			<param name="Local" value="1.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="vm-push dreg">
+			<param name="Local" value="2.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="vm-push wreg">
+			<param name="Local" value="3.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="vm-push breg">
+			<param name="Local" value="4.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="vm-pop dreg">
+			<param name="Local" value="5.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="vm-pop wreg">
+			<param name="Local" value="6.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="vm-pop breg">
+			<param name="Local" value="7.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="vm-push dconst">
+			<param name="Local" value="9.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="vm-push wconst">
+			<param name="Local" value="10.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="vm-push bconst">
+			<param name="Local" value="11.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="vm-push dsp">
+			<param name="Local" value="12.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="vm-add d[sp+4],d[sp]">
+			<param name="Local" value="8.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="vm-mov d[sp],d[[sp]]">
+			<param name="Local" value="13.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="vm-mov sp,[sp]">
+			<param name="Local" value="14.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="vm-mov d[[sp]],d[sp+4]">
+			<param name="Local" value="15.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="vm-and ~d[sp+4],~d[sp]">
+			<param name="Local" value="16.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="vm-or ~d[sp+4],~d[sp]">
+			<param name="Local" value="17.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="vm-jmp">
+			<param name="Local" value="18.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="vm-shl d[sp+4],b[sp]">
+			<param name="Local" value="19.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="vm-shr d[sp],b[sp+4]">
+			<param name="Local" value="20.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="vm-call dreg">
+			<param name="Local" value="21.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="vm-cpuid">
+			<param name="Local" value="22.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="vm-shld d[sp],d[sp+4],b[sp+8]">
+			<param name="Local" value="23.htm">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

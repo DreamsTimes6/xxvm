@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<Title>shld d[sp],d[sp+4],b[sp+8]</Title>
+<style type="text/css">
+body
+{
+	background-color:RGB(192,151,73) ;
+}
+</style>
+</HEAD>
+
+<BODY>
+	<h1>shld d[sp],d[sp+4],b[sp+8]</h1>
+	<p>It's assembly Pseudo-code .</p>
+	<p>It's means as the same of assemmbly instruction "shld ?,?,?"</p>
+	<p>The Pseudo-code has two step;</p>
+	<h2>Operation</h2>
+	<p>mov t0,d[sp+4];mov t1,b[sp];shl t0,t1;add sp,2;mov [sp+4],t0;mov [sp],eflag</p>
+	<h2>Example</h2>
+	<h3>0053a730  shld d[sp],d[sp+4],b[sp+8] (add sp,2)  00000000-00000000  0019fe00  [sp]=eflag,[sp+4]=hdword(00000000-00000000)  </h3>
+	<p>"0053a730":It is a address of Pseudo-code</p>
+	<p>"shld d[sp],d[sp+4],b[sp+8]":It is Pesudo-code</p>
+	<p>"(sub sp,2)":This is secong step,operate the "sp",for keep stack balance</p>
+	<p>"00000000-00000000":the qword "[sp]-[sp+4]"</p>
+	<p>"0019fe00":the value of "b[sp+8]",the size is "b",so the value is "00"</p>
+	<p>"[sp]=eflag,[sp+4]=hdword(00000000-00000000)":Results after implementation</p>
+</BODY>
+</HTML>

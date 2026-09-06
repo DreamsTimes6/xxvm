@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="analyze_cfg.c">
+      <Filter>源文件</Filter>
+    </ClCompile>    <ClCompile Include="crc32.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dbg_command.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="func_op1.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="func_op10.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="func_op2.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="func_op3.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="func_op4.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="func_op5.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="func_op6.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="func_op7.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="func_op8.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="func_op9.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="func_op_ext.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="func_op_v.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_file.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0000.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0100.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0101.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0102.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0200.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0201.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0202.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0300.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0301.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0302.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0400.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0401.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0402.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0500.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0501.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0502.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0600.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0601.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0602.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0700.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0701.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0800.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0801.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0900.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0901.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0902.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0a00.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0a10.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0b00.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0b01.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0b02.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0b10.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0c00.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0c10.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0d00.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0d01.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0d02.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0e00.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0e01.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0e02.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0e10.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0f00.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_0f01.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_1000.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_1001.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_1100.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_1200.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_1300.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_handle_1400.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_regindex.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_shandle.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_shandle_0000.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_shandle_0f00.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_shandle_0f01.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_shandle_1200.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_shandle_1401.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="vm_sreg.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="xx_execute.c">
+      <Filter>源文件</Filter>
+    </ClCompile>    <ClCompile Include="xx_link_list.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="xx_opmz.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="xx_vm.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="analyze_cfg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="crc32.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="func_op.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Plugin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="readme.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>    <ClInclude Include="xx_comm32.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xx_def.h">
+      <Filter>头文件</Filter>
+    </ClInclude>    <ClInclude Include="xx_link_list.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xx_opdef2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xx_opdef3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xx_opmz.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xx_vm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="xxdisasm32.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="damotouicon (2).ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="xx_res.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

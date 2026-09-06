@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<Title>mov d[[sp]],d[sp+4]</Title>
+<style type="text/css">
+body
+{
+	background-color:RGB(192,151,73) ;
+}
+</style>
+</HEAD>
+
+<BODY>
+	<h1>mov d[[sp]],d[sp+4]</h1>
+	<p>It's assembly Pseudo-code .</p>
+	<p>It's means as the same of assemmbly instruction "mov ?,?"</p>
+	<p>The Pseudo-code has two step;</p>
+	<h2>Operation</h2>
+	<p>mov t0,[sp+4];mov t1,[sp];mov [t1],t0;add sp,8</p>
+	<h2>Example</h2>
+	<h3>007b796e  mov d[[sp]],d[sp+4]  (add sp,8)  [sp]=00000000 [[sp]]=[00000000]  [sp+4]=0019ff48 </h3>
+	<p>"007b796e":It is a address of Pseudo-code</p>
+	<p>"mov d[[sp]],d[sp+4]": is Pesudo-code</p>
+	<p>"(add sp,8)":It is Pesudo-code</p>	
+	<p>"[sp]=00000000":the size of "[sp]" is dword,so the value is "00000000"</p>
+	<p>"[[sp]]=[00000000]":the size of "[[sp]]" is dword,so the value is "00000000"</p>
+	<p>"[sp+4]=0019ff48":it's the value of result,the size of "[sp+4]" is dword,so the value is "0019ff48".Final,the opration is     "mov [00000000],0019ff48".If the first value is "[00000000]",its segment is "FS" usually.so "mov fs:[0],0019ff48"</p>
+</BODY>
+</HTML>
+
+
+

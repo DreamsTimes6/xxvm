@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B42D0F40-32CD-4F3F-9E4B-AF6B7C8D9E0F}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WINDOWS_IGNORE_PACKING_MISMATCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WINDOWS_IGNORE_PACKING_MISMATCH;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="inst_print.c" />
+    <ClCompile Include="item_reg_def.c" />
+    <ClCompile Include="item_type_a.c" />
+    <ClCompile Include="item_type_reg.c" />
+    <ClCompile Include="mod_begin_check.c" />
+    <ClCompile Include="mod_finish.c" />
+    <ClCompile Include="mod_fpu_opcode.c" />
+    <ClCompile Include="mod_items.c" />
+    <ClCompile Include="mod_modrm.c" />
+    <ClCompile Include="mod_opcode.c" />
+    <ClCompile Include="mod_prefix.c" />
+    <ClCompile Include="mod_rex.c" />
+    <ClCompile Include="mod_sib.c" />
+    <ClCompile Include="seek_table.c" />
+    <ClCompile Include="sql_rdata.c" />
+    <ClCompile Include="xx_sql.c" />
+    <ClCompile Include="xxdisasm.c" />
+    <ClCompile Include="xxdisasm32.c" />
+    <ClCompile Include="xxdisasm_api0.c" />
+    <ClCompile Include="xxdisasm_api1.c" />
+    <ClCompile Include="xxdisasm_api2.c" />
+    <ClCompile Include="xxdisasm_api3.c" />
+    <ClInclude Include="g_sql.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="xx_comm32.h" />
+    <ClInclude Include="xx_def.h" />
+    <ClInclude Include="xx_err.h" />
+    <ClInclude Include="xx_inst.h" />
+    <ClInclude Include="xx_mysql.h" />
+    <ClInclude Include="xx_reg2.h" />
+    <ResourceCompile Include="xxdisasm.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

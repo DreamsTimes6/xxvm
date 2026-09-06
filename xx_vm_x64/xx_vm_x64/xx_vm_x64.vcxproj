@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{037774E5-B79D-4585-AC9C-D250980D379E}</ProjectGuid>
+    <RootNamespace>xxvm64</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>xx_vm_x64</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>F:\xxvm\pluginsdk;F:\xxvm\pluginsdk\yara\yara;F:\xxvm\pluginsdk\yara;F:\xxvm\pluginsdk\XEDParse;F:\xxvm\pluginsdk\TitanEngine;F:\xxvm\pluginsdk\lz4;F:\xxvm\pluginsdk\jansson;F:\xxvm\pluginsdk\DeviceNameResolver;F:\xxvm\pluginsdk\dbghelp;$(IncludePath)</IncludePath>
+    <LibraryPath>F:/xxvm/unicorn_src/build64x/Release;F:\xxvm\pluginsdk;F:\xxvm\pluginsdk\yara\yara;F:\xxvm\pluginsdk\yara;F:\xxvm\pluginsdk\XEDParse;F:\xxvm\pluginsdk\TitanEngine;F:\xxvm\pluginsdk\lz4;F:\xxvm\pluginsdk\jansson;F:\xxvm\pluginsdk\DeviceNameResolver;F:\xxvm\pluginsdk\dbghelp;$(LibraryPath)</LibraryPath>
+    <TargetExt>.dp64</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:/xxvm/unicorn_src/include;F:\xxvm\pluginsdk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>F:/xxvm/unicorn_src/include;F:\xxvm\pluginsdk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>unicorn.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:/xxvm/unicorn_src/include;F:\xxvm\pluginsdk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>F:/xxvm/unicorn_src/include;F:\xxvm\pluginsdk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>unicorn.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>F:/xxvm/unicorn_src/include;F:\xxvm\pluginsdk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>unicorn.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>F:/xxvm/unicorn_src/include;F:\xxvm\pluginsdk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>unicorn.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateMapFile>true</GenerateMapFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="analyze_cfg.h" />
+    <ClInclude Include="crc32.h" />
+    <ClInclude Include="func_op.h" />
+    <ClInclude Include="limits.h" />
+    <ClInclude Include="res.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
+    <ClInclude Include="xxdisasm64.h" />
+    <ClInclude Include="xx_comm64.h" />
+    <ClInclude Include="xx_def.h" />
+    <ClInclude Include="xx_link_list.h" />
+    <ClInclude Include="xx_opdef2.h" />
+    <ClInclude Include="xx_opdef3.h" />
+    <ClInclude Include="xx_opmz.h" />
+    <ClInclude Include="xx_plugin.h" />
+    <ClInclude Include="xx_vm.h" />
+    <ClInclude Include="vmp38_restore.h" />
+    <ClInclude Include="vmp39_restore.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="analyze_cfg.c" />
+    <ClCompile Include="crc32.c" />
+    <ClCompile Include="dbg_command.c" />
+    <ClCompile Include="func_op1.c" />
+    <ClCompile Include="func_op10.c" />
+    <ClCompile Include="func_op2.c" />
+    <ClCompile Include="func_op3.c" />
+    <ClCompile Include="func_op4.c" />
+    <ClCompile Include="func_op5.c" />
+    <ClCompile Include="func_op6.c" />
+    <ClCompile Include="func_op7.c" />
+    <ClCompile Include="func_op8.c" />
+    <ClCompile Include="func_op_ext.c" />
+    <ClCompile Include="func_op_v.c" />
+    <ClCompile Include="vm_handle.c" />
+    <ClCompile Include="vmp38_restore.cpp" />
+    <ClCompile Include="vmp39_dict_data.c" />
+    <ClCompile Include="vmp39_restore.c" />
+    <ClCompile Include="vm_handle_0000.c" />
+    <ClCompile Include="vm_handle_0100.c" />
+    <ClCompile Include="vm_handle_0101.c" />
+    <ClCompile Include="vm_handle_0102.c" />
+    <ClCompile Include="vm_handle_10103.c" />
+    <ClCompile Include="vm_handle_0200.c" />
+    <ClCompile Include="vm_handle_0201.c" />
+    <ClCompile Include="vm_handle_0202.c" />
+    <ClCompile Include="vm_handle_10203.c" />
+    <ClCompile Include="vm_handle_0300.c" />
+    <ClCompile Include="vm_handle_0301.c" />
+    <ClCompile Include="vm_handle_0302.c" />
+    <ClCompile Include="vm_handle_0303.c" />
+    <ClCompile Include="vm_handle_10a10.c" />
+    <ClCompile Include="vm_handle_10400.c" />
+    <ClCompile Include="vm_handle_10401.c" />
+    <ClCompile Include="vm_handle_10402.c" />
+    <ClCompile Include="vm_handle_10403.c" />
+    <ClCompile Include="vm_handle_10500.c" />
+    <ClCompile Include="vm_handle_10501.c" />
+    <ClCompile Include="vm_handle_10502.c" />
+    <ClCompile Include="vm_handle_10503.c" />
+    <ClCompile Include="vm_handle_10610.c" />
+    <ClCompile Include="vm_handle_10611.c" />
+    <ClCompile Include="vm_handle_10612.c" />
+    <ClCompile Include="vm_handle_10613.c" />
+    <ClCompile Include="vm_handle_0700.c" />
+    <ClCompile Include="vm_handle_0701.c" />
+    <ClCompile Include="vm_handle_0703.c" />
+    <ClCompile Include="vm_handle_0800.c" />
+    <ClCompile Include="vm_handle_0801.c" />
+    <ClCompile Include="vm_handle_10900.c" />
+    <ClCompile Include="vm_handle_10901.c" />
+    <ClCompile Include="vm_handle_10902.c" />
+    <ClCompile Include="vm_handle_10903.c" />
+    <ClCompile Include="vm_handle_10a00.c" />
+    <ClCompile Include="vm_handle_10a23.c" />
+    <ClCompile Include="vm_handle_10a33.c" />
+    <ClCompile Include="vm_handle_10b00.c" />
+    <ClCompile Include="vm_handle_10b01.c" />
+    <ClCompile Include="vm_handle_10b02.c" />
+    <ClCompile Include="vm_handle_10b03.c" />
+    <ClCompile Include="vm_handle_0b10.c" />
+    <ClCompile Include="vm_handle_0b11.c" />
+    <ClCompile Include="vm_handle_10c00.c" />
+    <ClCompile Include="vm_handle_10c10.c" />
+    <ClCompile Include="vm_handle_10c23.c" />
+    <ClCompile Include="vm_handle_10c33.c" />
+    <ClCompile Include="vm_handle_10d00.c" />
+    <ClCompile Include="vm_handle_10d01.c" />
+    <ClCompile Include="vm_handle_10d02.c" />
+    <ClCompile Include="vm_handle_10d03.c" />
+    <ClCompile Include="vm_handle_10e00.c" />
+    <ClCompile Include="vm_handle_10e01.c" />
+    <ClCompile Include="vm_handle_10e02.c" />
+    <ClCompile Include="vm_handle_10e03.c" />
+    <ClCompile Include="vm_handle_0e10.c" />
+    <ClCompile Include="vm_handle_0e11.c" />
+    <ClCompile Include="vm_handle_0f00.c" />
+    <ClCompile Include="vm_handle_0f01.c" />
+    <ClCompile Include="vm_handle_1000.c" />
+    <ClCompile Include="vm_handle_1001.c" />
+    <ClCompile Include="vm_handle_1100.c" />
+    <ClCompile Include="vm_handle_1103.c" />
+    <ClCompile Include="vm_handle_1200.c" />
+    <ClCompile Include="vm_handle_1300.c" />
+    <ClCompile Include="vm_handle_1303.c" />
+    <ClCompile Include="vm_handle_1400.c" />
+    <ClCompile Include="vm_sreg.c" />
+    <ClCompile Include="xx_execute64.c" />
+    <ClCompile Include="xx_link_list.c" />
+    <ClCompile Include="xx_opmz.c" />
+    <ClCompile Include="xx_reg_index.c" />
+    <ClCompile Include="xx_vm64.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="subfunc_op1.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <Command>ml64 /c %(filename).asm</Command>
+      <Outputs>%(filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="subfunc_op2.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <Command>ml64 /c %(filename).asm</Command>
+      <Outputs>%(filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="subfunc_op3.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <Command>ml64 /c %(filename).asm</Command>
+      <Outputs>%(filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="subfunc_op4.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <Command>ml64 /c %(filename).asm</Command>
+      <Outputs>%(filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="subfunc_op5.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <Command>ml64 /c %(filename).asm</Command>
+      <Outputs>%(filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="subfunc_op6.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <Command>ml64 /c %(filename).asm</Command>
+      <Outputs>%(filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="subfunc_op10.asm">
+      <FileType>Document</FileType>
+      <Command>ml64 /c %(filename).asm</Command>
+      <Outputs>%(filename).obj;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="xx_vm.inc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resource.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="damotouicon (2).ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

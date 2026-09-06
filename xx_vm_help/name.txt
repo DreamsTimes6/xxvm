@@ -1,0 +1,21 @@
+1  entry
+2  push derg
+3  push wreg
+4  push breg
+5  pop dreg
+6  pop wreg
+7  pop breg
+8  add d[sp+4],d[sp]
+
+
+
+
+
+
+
+
+
+
+
+
+
